@@ -90,12 +90,12 @@ public class IntToWordsTest {
 
     @Test(expected=IllegalArgumentException.class) 
     public void testIllegalValueTooSmall() {
-        IntToWords.intToWords(-1);
+        IntToWords.intToWords(IntToWords.MIN - 1);
     }
 
     @Test(expected=IllegalArgumentException.class) 
     public void testIllegalValueTooLarge() {
-        IntToWords.intToWords(1_000_000_000);
+        IntToWords.intToWords(IntToWords.MAX + 1);
     }
 
 }

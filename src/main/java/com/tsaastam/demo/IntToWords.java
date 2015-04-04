@@ -51,7 +51,7 @@ public class IntToWords {
             final String mainString = intToWords(main) + " " + limitString;
             final String and = limit < 1000 ? " and " : " ";
             final String remainderString = remainder == 0 ? "" : and + intToWords(remainder);
-//            System.out.println(""+i+" -> " + mainString + remainderString);
+            System.out.println(""+i+" -> " + mainString + remainderString);
             return mainString + remainderString;
         }
     }
