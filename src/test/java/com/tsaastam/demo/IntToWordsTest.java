@@ -83,9 +83,9 @@ public class IntToWordsTest {
     }
 
     @Test
-    public void testLimits() {
-        assertEquals("zero", IntToWords.intToWords(IntToWords.MIN));
-        assertEquals("nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine", IntToWords.intToWords(IntToWords.MAX));
+    public void testDefaultLimits() {
+        assertEquals("zero", IntToWords.intToWords(0));
+        assertEquals("nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine", IntToWords.intToWords(999_999_999));
     }
 
     @Test(expected=IllegalArgumentException.class) 
